@@ -1,0 +1,30 @@
+{
+  "name": "cctv.glitches.me",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "vite dev",
+    "build": "vite build"
+  },
+  "dependencies": {
+    "@discordapp/twemoji": "^14.1.2",
+    "@emotion/css": "^11.11.2",
+    "airtable": "^0.12.2",
+    "choo": "^7.1.0",
+    "markdown-it": "^13.0.1",
+    "markdown-it-emoji": "^2.0.2"
+  },
+  "devDependencies": {
+    "vite": "^4.3.8"
+  },
+  "browserslist": [
+    ">0.2%",
+    "not dead"
+  ],
+  "engines": {
+    "node": "16.x"
+  },
+  "author": "Naoto Hieda",
+  "license": "MIT"
+}

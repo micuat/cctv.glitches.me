@@ -1,0 +1,6 @@
+node_modules/
+videos-original/
+videos-converted/
+list
+*.mp4
+.DS_Store

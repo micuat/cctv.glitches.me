@@ -1,0 +1,17 @@
+import raw from "choo/html/raw";
+import html from "choo/html";
+
+import text from "/list?raw";
+
+export default (state, emitter) => {
+  state.videos = text.split("\n").filter(e => e.length > 0);
+
+  state.playback = [];
+  for(let i = 0; i < 8; i++) {
+    state.playback[i] = {
+      id: i,
+      i,
+      url: state.videos[i],
+    }
+  }
+}
