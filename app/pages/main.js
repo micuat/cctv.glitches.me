@@ -147,6 +147,9 @@ table.selectList select.small{ width:75px;}
 table.selectList select.medium{ width:150px;}
 table.selectList select.large{ width:250px;}
 
+video {
+  height: 560px;
+}
 `;
 
 // export module
@@ -253,22 +256,22 @@ export default function(state, emit) {
             <table width="778" cellspacing="0" cellpadding="0" border="0">
               <tbody>
                 <tr class="top-mainborder">
-                  <td colspan="2"><img src="public/line_corner_lt_5x5px.gif" width="5" height="5" border="0" alt="">
+                  <td colspan="2"><img src="/line_corner_lt_5x5px.gif" width="5" height="5" border="0" alt="">
                   </td>
-                  <td background="public/line_t_100x5px.gif"><img src="public/line_t_100x5px.gif" width="768"
+                  <td background="/line_t_100x5px.gif"><img src="/line_t_100x5px.gif" width="768"
                       height="5" border="0" alt=""></td>
-                  <td colspan="2"><img src="public/line_corner_rt_5x5px.gif" width="5" height="5" border="0" alt="">
+                  <td colspan="2"><img src="/line_corner_rt_5x5px.gif" width="5" height="5" border="0" alt="">
                   </td>
                 </tr>
                 <tr>
-                  <td class="lineBg"><img src="public/blank.gif" width="1" border="0" alt=""></td>
-                  <td><img src="public/blank.gif" width="4" height="1" border="0" alt=""></td>
+                  <td class="lineBg"><img src="/blank.gif" width="1" border="0" alt=""></td>
+                  <td><img src="/blank.gif" width="4" height="1" border="0" alt=""></td>
                   <td valign="middle" align="left" width="100%">
                     <table border="0" cellspacing="0" cellpadding="0" width="100%">
                       <tbody>
                         <tr>
                           <td>
-                            <a href="http://www.axis.com/" target="_blank"><img src="public/logo_70x29px.gif"
+                            <a href="http://www.axis.com/" target="_blank"><img src="/logo_70x29px.gif"
                                 width="68" height="29" border="0" title="Axis" alt="Axis"></a>
                           </td>
                           <td class="topTitle" align="center" id="view_prodName">AXIS M1114 Network Camera</td>
@@ -294,22 +297,22 @@ export default function(state, emit) {
                     </table>
                   </td>
 
-                  <td><img src="public/blank.gif" width="4" border="0" alt=""></td>
-                  <td class="lineBg"><img src="public/blank.gif" width="1" height="1" alt=""></td>
+                  <td><img src="/blank.gif" width="4" border="0" alt=""></td>
+                  <td class="lineBg"><img src="/blank.gif" width="1" height="1" alt=""></td>
                 </tr>
                 <tr>
-                  <td class="lineBg"><img src="public/blank.gif" width="1" height="5" alt=""></td>
-                  <td colspan="3"><img src="public/blank.gif" width="1" height="5" alt=""></td>
-                  <td class="lineBg"><img src="public/blank.gif" width="1" height="5" alt=""></td>
+                  <td class="lineBg"><img src="/blank.gif" width="1" height="5" alt=""></td>
+                  <td colspan="3"><img src="/blank.gif" width="1" height="5" alt=""></td>
+                  <td class="lineBg"><img src="/blank.gif" width="1" height="5" alt=""></td>
                 </tr>
                 <tr class="bottom-mainborder">
-                  <td colspan="2"><img src="public/line_corner_lb_5x5px.gif" width="5" height="5" alt=""></td>
-                  <td background="public/line_b_100x5px.gif"><img src="public/blank.gif" width="768" height="5"
+                  <td colspan="2"><img src="/line_corner_lb_5x5px.gif" width="5" height="5" alt=""></td>
+                  <td background="/line_b_100x5px.gif"><img src="/blank.gif" width="768" height="5"
                       alt=""></td>
-                  <td colspan="2"><img src="public/line_corner_rb_5x5px.gif" width="5" height="5" alt=""></td>
+                  <td colspan="2"><img src="/line_corner_rb_5x5px.gif" width="5" height="5" alt=""></td>
                 </tr>
                 <tr>
-                  <td colspan="5"><img src="public/blank.gif" width="1" height="5" border="0" alt=""></td>
+                  <td colspan="5"><img src="/blank.gif" width="1" height="5" border="0" alt=""></td>
                 </tr>
 
                 <tr>
@@ -322,76 +325,76 @@ export default function(state, emit) {
                               <tbody>
                                 <tr class="top-mainborder">
                                   <td colspan="2"
-                                    style="width: 5px; background-image: url(&quot;/pics/gray_corner_lt_5x50px.gif&quot;);">
-                                    <img src="public/blank.gif" style="width: 5px; height: 5px; border: 0px;"></td>
+                                    style="width: 5px; background-image: url('/pics/gray_corner_lt_5x50px.gif');">
+                                    <img src="/blank.gif" style="width: 5px; height: 5px; border: 0px;"></td>
                                   <td valign="top" align="center"
-                                    style="width: 100%; height: 5px; white-space: nowrap; background-image: url(&quot;/pics/gray_t_5x50px.gif&quot;);"
-                                    class="funcText">Gr��e anzeigen</td>
+                                    style="width: 100%; height: 5px; white-space: nowrap; background-image: url('/pics/gray_t_5x50px.gif');"
+                                    class="funcText">Größe anzeigen</td>
                                   <td colspan="2"
-                                    style="width: 5px; background-image: url(&quot;/pics/gray_corner_rt_5x50px.gif&quot;);">
-                                    <img src="public/blank.gif" style="width: 5px; height: 5px; border: 0px;"></td>
+                                    style="width: 5px; background-image: url('/pics/gray_corner_rt_5x50px.gif');">
+                                    <img src="/blank.gif" style="width: 5px; height: 5px; border: 0px;"></td>
                                 </tr>
                                 <tr>
-                                  <td style="width: 1px;" class="lineBg"><img src="public/blank.gif"
+                                  <td style="width: 1px;" class="lineBg"><img src="/blank.gif"
                                       style="width: 1px; height: 5px; border: 0px;"></td>
-                                  <td style="width: 4px;"><img src="public/blank.gif"
+                                  <td style="width: 4px;"><img src="/blank.gif"
                                       style="width: 4px; height: 5px; border: 0px;"></td>
                                   <td valign="middle" align="center" style="width: 100%;">
                                     <table cellpadding="0" cellspacing="0" style="border: 0px;">
                                       <tbody>
                                         <tr>
                                           <td valign="middle" align="left"><a href="javascript:dynamicResize(true)"
-                                              target="_self"><img src="public/button_downsize_gray_27x27px.gif"
+                                              target="_self"><img src="/button_downsize_gray_27x27px.gif"
                                                 style="width: 27px; height: 27px;" border="0" id="adjustSize"
                                                 alt="Adjust to the browser size" title="Adjust to the browser size"></a>
                                           </td>
                                           <td valign="middle" align="left"><a href="javascript:dynamicResize(false)"
-                                              target="_self"><img src="public/button_x1_27x27px.gif"
+                                              target="_self"><img src="/button_x1_27x27px.gif"
                                                 style="width: 27px; height: 27px;" border="0" id="fullSize"
                                                 alt="Vollbild" title="Vollbild"></a></td>
                                         </tr>
                                       </tbody>
                                     </table>
                                   </td>
-                                  <td style="width: 4px;"><img src="public/blank.gif"
+                                  <td style="width: 4px;"><img src="/blank.gif"
                                       style="width: 4px; height: 5px; border: 0px;"></td>
-                                  <td style="width: 1px;" class="lineBg"><img src="public/blank.gif"
+                                  <td style="width: 1px;" class="lineBg"><img src="/blank.gif"
                                       style="width: 1px; height: 5px; border: 0px;"></td>
                                 </tr>
                                 <tr class="bottom-mainborder">
                                   <td colspan="2"
-                                    style="width: 5px; background-image: url(&quot;/pics/line_corner_lb_5x5px.gif&quot;);">
-                                    <img src="public/blank.gif" style="width: 5px; height: 5px; border: 0px;"></td>
+                                    style="width: 5px; background-image: url('/pics/line_corner_lb_5x5px.gif');">
+                                    <img src="/blank.gif" style="width: 5px; height: 5px; border: 0px;"></td>
                                   <td
-                                    style="width: 100%; height: 5px; background-image: url(&quot;/pics/line_b_100x5px.gif&quot;);">
-                                    <img src="public/blank.gif" style="width: 1px; height: 5px; border: 0px;"></td>
+                                    style="width: 100%; height: 5px; background-image: url('/pics/line_b_100x5px.gif');">
+                                    <img src="/blank.gif" style="width: 1px; height: 5px; border: 0px;"></td>
                                   <td colspan="2"
-                                    style="width: 5px; height: 5px; background-image: url(&quot;/pics/line_corner_rb_5x5px.gif&quot;);">
-                                    <img src="public/blank.gif" style="width: 5px; height: 5px; border: 0px;"></td>
+                                    style="width: 5px; height: 5px; background-image: url('/pics/line_corner_rb_5x5px.gif');">
+                                    <img src="/blank.gif" style="width: 5px; height: 5px; border: 0px;"></td>
                                 </tr>
                               </tbody>
                             </table>
                           </td>
-                          <td style="width: 5px;"><img src="public/blank.gif"
+                          <td style="width: 5px;"><img src="/blank.gif"
                               style="width: 5px; height: 5px; border: 0px;"></td>
                           <td>
                             <table style="width: 100%; height: 46px; border: 0px;" cellpadding="0" cellspacing="0">
                               <tbody>
                                 <tr class="top-mainborder">
                                   <td colspan="2"
-                                    style="width: 5px; background-image: url(&quot;/pics/gray_corner_lt_5x50px.gif&quot;);">
-                                    <img src="public/blank.gif" style="width: 5px; height: 5px; border: 0px;"></td>
+                                    style="width: 5px; background-image: url('/pics/gray_corner_lt_5x50px.gif');">
+                                    <img src="/blank.gif" style="width: 5px; height: 5px; border: 0px;"></td>
                                   <td valign="top" align="center"
-                                    style="width: 100%; height: 5px; white-space: nowrap; background-image: url(&quot;/pics/gray_t_5x50px.gif&quot;);"
+                                    style="width: 100%; height: 5px; white-space: nowrap; background-image: url('/pics/gray_t_5x50px.gif');"
                                     class="funcText">Video-Streamprofil</td>
                                   <td colspan="2"
-                                    style="width: 5px; background-image: url(&quot;/pics/gray_corner_rt_5x50px.gif&quot;);">
-                                    <img src="public/blank.gif" style="width: 5px; height: 5px; border: 0px;"></td>
+                                    style="width: 5px; background-image: url('/pics/gray_corner_rt_5x50px.gif');">
+                                    <img src="/blank.gif" style="width: 5px; height: 5px; border: 0px;"></td>
                                 </tr>
                                 <tr>
-                                  <td style="width: 1px;" class="lineBg"><img src="public/blank.gif"
+                                  <td style="width: 1px;" class="lineBg"><img src="/blank.gif"
                                       style="width: 1px; height: 5px; border: 0px;"></td>
-                                  <td style="width: 4px;"><img src="public/blank.gif"
+                                  <td style="width: 4px;"><img src="/blank.gif"
                                       style="width: 4px; height: 5px; border: 0px;"></td>
                                   <td valign="middle" align="center" style="width: 100%;">
                                     <table cellpadding="0" cellspacing="0" style="border: 0px;">
@@ -412,124 +415,124 @@ export default function(state, emit) {
                                       </tbody>
                                     </table>
                                   </td>
-                                  <td style="width: 4px;"><img src="public/blank.gif"
+                                  <td style="width: 4px;"><img src="/blank.gif"
                                       style="width: 4px; height: 5px; border: 0px;"></td>
-                                  <td style="width: 1px;" class="lineBg"><img src="public/blank.gif"
+                                  <td style="width: 1px;" class="lineBg"><img src="/blank.gif"
                                       style="width: 1px; height: 5px; border: 0px;"></td>
                                 </tr>
                                 <tr class="bottom-mainborder">
                                   <td colspan="2"
-                                    style="width: 5px; background-image: url(&quot;/pics/line_corner_lb_5x5px.gif&quot;);">
-                                    <img src="public/blank.gif" style="width: 5px; height: 5px; border: 0px;"></td>
+                                    style="width: 5px; background-image: url('/pics/line_corner_lb_5x5px.gif');">
+                                    <img src="/blank.gif" style="width: 5px; height: 5px; border: 0px;"></td>
                                   <td
-                                    style="width: 100%; height: 5px; background-image: url(&quot;/pics/line_b_100x5px.gif&quot;);">
-                                    <img src="public/blank.gif" style="width: 1px; height: 5px; border: 0px;"></td>
+                                    style="width: 100%; height: 5px; background-image: url('/pics/line_b_100x5px.gif');">
+                                    <img src="/blank.gif" style="width: 1px; height: 5px; border: 0px;"></td>
                                   <td colspan="2"
-                                    style="width: 5px; height: 5px; background-image: url(&quot;/pics/line_corner_rb_5x5px.gif&quot;);">
-                                    <img src="public/blank.gif" style="width: 5px; height: 5px; border: 0px;"></td>
+                                    style="width: 5px; height: 5px; background-image: url('/pics/line_corner_rb_5x5px.gif');">
+                                    <img src="/blank.gif" style="width: 5px; height: 5px; border: 0px;"></td>
                                 </tr>
                               </tbody>
                             </table>
                           </td>
-                          <td style="width: 5px;"><img src="public/blank.gif"
+                          <td style="width: 5px;"><img src="/blank.gif"
                               style="width: 5px; height: 5px; border: 0px;"></td>
                           <td style="width: 100%;">
                             <table style="width: 100%; height: 46px; border: 0px;" cellpadding="0" cellspacing="0">
                               <tbody>
                                 <tr class="top-mainborder">
                                   <td colspan="2"
-                                    style="width: 5px; background-image: url(&quot;/pics/gray_corner_lt_5x50px.gif&quot;);">
-                                    <img src="public/blank.gif" style="width: 5px; height: 5px; border: 0px;"></td>
+                                    style="width: 5px; background-image: url('/pics/gray_corner_lt_5x50px.gif');">
+                                    <img src="/blank.gif" style="width: 5px; height: 5px; border: 0px;"></td>
                                   <td valign="top" align="center"
-                                    style="width: 100%; height: 5px; white-space: nowrap; background-image: url(&quot;/pics/gray_t_5x50px.gif&quot;);"
+                                    style="width: 100%; height: 5px; white-space: nowrap; background-image: url('/pics/gray_t_5x50px.gif');"
                                     class="funcText"><br></td>
                                   <td colspan="2"
-                                    style="width: 5px; background-image: url(&quot;/pics/gray_corner_rt_5x50px.gif&quot;);">
-                                    <img src="public/blank.gif" style="width: 5px; height: 5px; border: 0px;"></td>
+                                    style="width: 5px; background-image: url('/pics/gray_corner_rt_5x50px.gif');">
+                                    <img src="/blank.gif" style="width: 5px; height: 5px; border: 0px;"></td>
                                 </tr>
                                 <tr>
-                                  <td style="width: 1px;" class="lineBg"><img src="public/blank.gif"
+                                  <td style="width: 1px;" class="lineBg"><img src="/blank.gif"
                                       style="width: 1px; height: 5px; border: 0px;"></td>
-                                  <td style="width: 4px;"><img src="public/blank.gif"
+                                  <td style="width: 4px;"><img src="/blank.gif"
                                       style="width: 4px; height: 5px; border: 0px;"></td>
                                   <td valign="middle" align="center" style="width: 100%;">
                                     <table cellpadding="0" cellspacing="0" style="border: 0px;">
                                       <tbody>
                                         <tr>
-                                          <td valign="middle" align="left"><img src="public/space.gif"
+                                          <td valign="middle" align="left"><img src="/space.gif"
                                               style="width: 1px; height: 27px;" border="0"></td>
                                           <td valign="middle" align="left"><br></td>
                                         </tr>
                                       </tbody>
                                     </table>
                                   </td>
-                                  <td style="width: 4px;"><img src="public/blank.gif"
+                                  <td style="width: 4px;"><img src="/blank.gif"
                                       style="width: 4px; height: 5px; border: 0px;"></td>
-                                  <td style="width: 1px;" class="lineBg"><img src="public/blank.gif"
+                                  <td style="width: 1px;" class="lineBg"><img src="/blank.gif"
                                       style="width: 1px; height: 5px; border: 0px;"></td>
                                 </tr>
                                 <tr class="bottom-mainborder">
                                   <td colspan="2"
-                                    style="width: 5px; background-image: url(&quot;/pics/line_corner_lb_5x5px.gif&quot;);">
-                                    <img src="public/blank.gif" style="width: 5px; height: 5px; border: 0px;"></td>
+                                    style="width: 5px; background-image: url('/pics/line_corner_lb_5x5px.gif');">
+                                    <img src="/blank.gif" style="width: 5px; height: 5px; border: 0px;"></td>
                                   <td
-                                    style="width: 100%; height: 5px; background-image: url(&quot;/pics/line_b_100x5px.gif&quot;);">
-                                    <img src="public/blank.gif" style="width: 1px; height: 5px; border: 0px;"></td>
+                                    style="width: 100%; height: 5px; background-image: url('/pics/line_b_100x5px.gif');">
+                                    <img src="/blank.gif" style="width: 1px; height: 5px; border: 0px;"></td>
                                   <td colspan="2"
-                                    style="width: 5px; height: 5px; background-image: url(&quot;/pics/line_corner_rb_5x5px.gif&quot;);">
-                                    <img src="public/blank.gif" style="width: 5px; height: 5px; border: 0px;"></td>
+                                    style="width: 5px; height: 5px; background-image: url('/pics/line_corner_rb_5x5px.gif');">
+                                    <img src="/blank.gif" style="width: 5px; height: 5px; border: 0px;"></td>
                                 </tr>
                               </tbody>
                             </table>
                           </td>
-                          <td style="width: 5px;"><img src="public/blank.gif"
+                          <td style="width: 5px;"><img src="/blank.gif"
                               style="width: 5px; height: 5px; border: 0px;"></td>
                           <td>
                             <table style="width: 100%; height: 46px; border: 0px;" cellpadding="0" cellspacing="0">
                               <tbody>
                                 <tr class="top-mainborder">
                                   <td colspan="2"
-                                    style="width: 5px; background-image: url(&quot;/pics/gray_corner_lt_5x50px.gif&quot;);">
-                                    <img src="public/blank.gif" style="width: 5px; height: 5px; border: 0px;"></td>
+                                    style="width: 5px; background-image: url('/pics/gray_corner_lt_5x50px.gif');">
+                                    <img src="/blank.gif" style="width: 5px; height: 5px; border: 0px;"></td>
                                   <td valign="top" align="center"
-                                    style="width: 100%; height: 5px; white-space: nowrap; background-image: url(&quot;/pics/gray_t_5x50px.gif&quot;);"
+                                    style="width: 100%; height: 5px; white-space: nowrap; background-image: url('/pics/gray_t_5x50px.gif');"
                                     class="funcText">Schnappschuss</td>
                                   <td colspan="2"
-                                    style="width: 5px; background-image: url(&quot;/pics/gray_corner_rt_5x50px.gif&quot;);">
-                                    <img src="public/blank.gif" style="width: 5px; height: 5px; border: 0px;"></td>
+                                    style="width: 5px; background-image: url('/pics/gray_corner_rt_5x50px.gif');">
+                                    <img src="/blank.gif" style="width: 5px; height: 5px; border: 0px;"></td>
                                 </tr>
                                 <tr>
-                                  <td style="width: 1px;" class="lineBg"><img src="public/blank.gif"
+                                  <td style="width: 1px;" class="lineBg"><img src="/blank.gif"
                                       style="width: 1px; height: 5px; border: 0px;"></td>
-                                  <td style="width: 4px;"><img src="public/blank.gif"
+                                  <td style="width: 4px;"><img src="/blank.gif"
                                       style="width: 4px; height: 5px; border: 0px;"></td>
                                   <td valign="middle" align="center" style="width: 100%;">
                                     <table cellpadding="0" cellspacing="0" style="border: 0px;">
                                       <tbody>
                                         <tr>
                                           <td valign="middle" align="left"><a href="#" target="_self"><img
-                                                src="public/button_shot_27x27px.gif"
+                                                src="/button_shot_27x27px.gif"
                                                 style="width: 27px; height: 27px;" border="0" alt="Schnappschuss"
                                                 title="Schnappschuss"></a></td>
                                         </tr>
                                       </tbody>
                                     </table>
                                   </td>
-                                  <td style="width: 4px;"><img src="public/blank.gif"
+                                  <td style="width: 4px;"><img src="/blank.gif"
                                       style="width: 4px; height: 5px; border: 0px;"></td>
-                                  <td style="width: 1px;" class="lineBg"><img src="public/blank.gif"
+                                  <td style="width: 1px;" class="lineBg"><img src="/blank.gif"
                                       style="width: 1px; height: 5px; border: 0px;"></td>
                                 </tr>
                                 <tr class="bottom-mainborder">
                                   <td colspan="2"
-                                    style="width: 5px; background-image: url(&quot;/pics/line_corner_lb_5x5px.gif&quot;);">
-                                    <img src="public/blank.gif" style="width: 5px; height: 5px; border: 0px;"></td>
+                                    style="width: 5px; background-image: url('/pics/line_corner_lb_5x5px.gif');">
+                                    <img src="/blank.gif" style="width: 5px; height: 5px; border: 0px;"></td>
                                   <td
-                                    style="width: 100%; height: 5px; background-image: url(&quot;/pics/line_b_100x5px.gif&quot;);">
-                                    <img src="public/blank.gif" style="width: 1px; height: 5px; border: 0px;"></td>
+                                    style="width: 100%; height: 5px; background-image: url('/pics/line_b_100x5px.gif');">
+                                    <img src="/blank.gif" style="width: 1px; height: 5px; border: 0px;"></td>
                                   <td colspan="2"
-                                    style="width: 5px; height: 5px; background-image: url(&quot;/pics/line_corner_rb_5x5px.gif&quot;);">
-                                    <img src="public/blank.gif" style="width: 5px; height: 5px; border: 0px;"></td>
+                                    style="width: 5px; height: 5px; background-image: url('/pics/line_corner_rb_5x5px.gif');">
+                                    <img src="/blank.gif" style="width: 5px; height: 5px; border: 0px;"></td>
                                 </tr>
                               </tbody>
                             </table>
@@ -541,21 +544,21 @@ export default function(state, emit) {
                 </tr>
 
                 <tr>
-                  <td colspan="5"><img src="public/blank.gif" width="1" height="5" border="0" alt=""></td>
+                  <td colspan="5"><img src="/blank.gif" width="1" height="5" border="0" alt=""></td>
                 </tr>
                 <tr class="top-mainborder">
-                  <td colspan="2"><img src="public/line_corner_lt_5x5px.gif" width="5" height="5" border="0" alt="">
+                  <td colspan="2"><img src="/line_corner_lt_5x5px.gif" width="5" height="5" border="0" alt="">
                   </td>
-                  <td background="public/line_t_100x5px.gif"><img src="public/blank.gif" width="768" height="5"
+                  <td background="/line_t_100x5px.gif"><img src="/blank.gif" width="768" height="5"
                       border="0" alt=""></td>
-                  <td colspan="2"><img src="public/line_corner_rt_5x5px.gif" width="5" height="5" border="0" alt="">
+                  <td colspan="2"><img src="/line_corner_rt_5x5px.gif" width="5" height="5" border="0" alt="">
                   </td>
                 </tr>
 
                 <tr>
-                  <td width="1" class="lineBg"><img src="public/blank.gif" width="1" height="1" border="0" alt="">
+                  <td width="1" class="lineBg"><img src="/blank.gif" width="1" height="1" border="0" alt="">
                   </td>
-                  <td width="4"><img src="public/blank.gif" width="4" height="1" border="0" alt=""></td>
+                  <td width="4"><img src="/blank.gif" width="4" height="1" border="0" alt=""></td>
                   <td valign="top" align="center" width="768">
 
                     <table border="0" cellpadding="0" cellspacing="0" height="100%" width="776">
@@ -582,7 +585,7 @@ export default function(state, emit) {
                                           </div>
                                         `) }
                                 
-                                          <img style="display:none" id="stream" src="public/video.html"
+                                          <img style="display:none" id="stream" src="/video.html"
                                               width="747" height="560" border="0"
                                               alt="Wenn kein Bild angezeigt wird, gibt es m�glicherweise zu viele Betrachter oder die Browserkonfiguration muss ge�ndert werden. Ausf�hrliche Informationen dar�ber finden Sie in der Hilfe."><br>
                                           </td>
@@ -599,14 +602,14 @@ export default function(state, emit) {
                                                           href="javascript:void(0)"
                                                           onclick="stopStartStream('/jpg/1/image.jpg')"
                                                           style="display: inline;"><img
-                                                            src="public/stop_blue_button_27x27px.gif" width="27"
+                                                            src="/stop_blue_button_27x27px.gif" width="27"
                                                             height="27" alt="Streaming anhalten"
                                                             title="Streaming anhalten" border="0"
                                                             onmouseover="javascript:btnShiftCls( this, true )"
                                                             onmouseout="javascript:btnShiftCls( this, false )"></a><a
                                                           id="playBtn" style="display:none;" href="javascript:void(0)"
                                                           onclick="stopStartStream('/jpg/video.jpg')"><img
-                                                            src="public/play_blue_button_27x27px.gif" width="27"
+                                                            src="/play_blue_button_27x27px.gif" width="27"
                                                             height="27" alt="Streaming starten"
                                                             title="Streaming starten" border="0"
                                                             onmouseover="javascript:btnShiftCls( this, true )"
@@ -634,42 +637,42 @@ export default function(state, emit) {
                       </tbody>
                     </table>
                   </td>
-                  <td width="4"><img src="public/blank.gif" width="4" height="1" border="0" alt=""></td>
-                  <td width="1" class="lineBg"><img src="public/blank.gif" width="1" height="1" border="0" alt="">
+                  <td width="4"><img src="/blank.gif" width="4" height="1" border="0" alt=""></td>
+                  <td width="1" class="lineBg"><img src="/blank.gif" width="1" height="1" border="0" alt="">
                   </td>
                 </tr>
                 <!-- ################################################################ -->
                 <!-- Defines the table width -->
                 <tr>
-                  <td colspan="1" width="1" class="lineBg"><img src="public/blank.gif" width="1" height="1" alt="">
+                  <td colspan="1" width="1" class="lineBg"><img src="/blank.gif" width="1" height="1" alt="">
                   </td>
-                  <td colspan="1" width="4"><img src="public/blank.gif" width="1" height="1" alt=""></td>
-                  <td colspan="1" width="768"><img src="public/blank.gif" width="1" height="1" alt=""></td>
-                  <td colspan="1" width="4"><img src="public/blank.gif" width="1" height="1" alt=""></td>
-                  <td colspan="1" width="1" class="lineBg"><img src="public/blank.gif" width="1" height="1" alt="">
+                  <td colspan="1" width="4"><img src="/blank.gif" width="1" height="1" alt=""></td>
+                  <td colspan="1" width="768"><img src="/blank.gif" width="1" height="1" alt=""></td>
+                  <td colspan="1" width="4"><img src="/blank.gif" width="1" height="1" alt=""></td>
+                  <td colspan="1" width="1" class="lineBg"><img src="/blank.gif" width="1" height="1" alt="">
                   </td>
                 </tr>
                 <!-- ################################################################ -->
                 <tr class="bottom-mainborder">
-                  <td colspan="2"><img src="public/line_corner_lb_5x5px.gif" width="5" height="5" alt=""></td>
-                  <td colspan="1" background="public/line_b_100x5px.gif"><img src="public/blank.gif" width="1"
+                  <td colspan="2"><img src="/line_corner_lb_5x5px.gif" width="5" height="5" alt=""></td>
+                  <td colspan="1" background="/line_b_100x5px.gif"><img src="/blank.gif" width="1"
                       height="1" alt=""></td>
-                  <td colspan="2"><img src="public/line_corner_rb_5x5px.gif" width="5" height="5" alt=""></td>
+                  <td colspan="2"><img src="/line_corner_rb_5x5px.gif" width="5" height="5" alt=""></td>
                 </tr>
 
 
                 <tr>
-                  <td width="1"><img src="public/blank.gif" width="1" height="1" border="0" alt=""></td>
+                  <td width="1"><img src="/blank.gif" width="1" height="1" border="0" alt=""></td>
                   <td colspan="6" valign="middle" align="left">
                     <table cellpadding="0" cellspacing="5" border="0">
                       <tbody>
                         <tr>
-                          <td>&nbsp;</td>
+                          <td></td>
                         </tr>
                       </tbody>
                     </table>
                   </td>
-                  <td width="1"><img src="public/blank.gif" width="1" height="1" border="0" alt=""></td>
+                  <td width="1"><img src="/blank.gif" width="1" height="1" border="0" alt=""></td>
                 </tr>
               </tbody>
             </table>
@@ -685,13 +688,17 @@ export default function(state, emit) {
     this.id = Math.floor(Math.random() * state.videos.length);
     this.url = state.videos[this.id];
 
-    if (Math.random() > 0.95) {
-      this.url = "naoto.mp4"
-      ev.target.src = this.url;
-    }
-    else {
+    // if (Math.random() > 0.95) {
+    //   this.url = "naoto.mp4"
+    //   ev.target.src = this.url;
+    // }
+    // else {
       ev.target.src = "/videos-converted/" + this.url;
-    }
+      ev.target.onerror = (e) => {
+        console.log("lol", e);
+        ended.bind(e)(ev);
+      }
+    // }
 
     // ev.target.querySelector("source").load();
     // ev.target.querySelector("source").play();
