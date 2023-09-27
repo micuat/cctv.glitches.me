@@ -7,7 +7,7 @@ export default (state, emitter) => {
   state.videos = text.split("\n").filter(e => e.length > 0);
 
   state.playback = [];
-  for(let i = 0; i < 8; i++) {
+  for(let i = 0; i < 1; i++) {
     state.playback[i] = {
       id: i,
       i,
