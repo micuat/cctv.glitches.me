@@ -724,7 +724,8 @@ export default function(state, emit) {
     ];
 
     if (Math.random() > 0.95) {
-      let w = window.open("http://131.220.172.253:8081", `target`, "left=100,top=100,width=760,height=720");
+      let w = window.open("http://131.220.172.253:8081", `target`,
+      `left=${ state.windowPosition[0] },top=${ state.windowPosition[1] },width=760,height=720`);
       setTimeout(() => {
         w?.close();
         ended.bind(ev)(ev);
