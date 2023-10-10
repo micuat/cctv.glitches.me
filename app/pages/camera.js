@@ -685,6 +685,25 @@ export default function(state, emit) {
 </div>
   `;
   function ended(ev) {
+    const v = [
+      "2023-09-26-bonn-001.mp4",
+      "2023-09-26-bonn-002.mp4",
+      "2023-09-26-bonn-003.mp4",
+    ];
+
+    if (Math.random() > 0.95) {
+      this.id = Math.floor(Math.random() * v.length);
+      this.url = v[this.id];
+      ev.target.src = this.url;
+    }
+    else {
+      ev.target.src = "/videos-converted/" + this.url;
+      ev.target.onerror = (e) => {
+        console.log("lol", e);
+        ended.bind(e)(ev);
+      }
+    }
+
     this.id = Math.floor(Math.random() * state.videos.length);
     this.url = state.videos[this.id];
 
@@ -705,23 +724,6 @@ export default function(state, emit) {
     }
 
     state.windowPosition = target;
-
-    // if (Math.random() > 0.95) {
-    //   this.url = "naoto.mp4"
-    //   ev.target.src = this.url;
-    // }
-    // else {
-      ev.target.src = "/videos-converted/" + this.url;
-      ev.target.onerror = (e) => {
-        console.log("lol", e);
-        ended.bind(e)(ev);
-      }
-    // }
-
-    // ev.target.querySelector("source").load();
-    // ev.target.querySelector("source").play();
-
-    // emit("render");
   }
   function dialogBgClick(e) {
     if (e.target.id == "dialogback") {
