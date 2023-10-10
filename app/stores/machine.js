@@ -14,4 +14,7 @@ export default (state, emitter) => {
       url: state.videos[i],
     }
   }
+
+  state.windowCount = 0;
+  state.windowPosition = [0, 0];
 }

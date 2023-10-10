@@ -20,8 +20,10 @@ function notFound() {
 
 // import a template
 import mainView from "./pages/main.js";
+import cameraView from "./pages/camera.js";
 
 app.route("/", mainView);
+app.route("/camera", cameraView);
 
 // start app
 app.mount("#choomount");
