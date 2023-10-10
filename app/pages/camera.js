@@ -725,7 +725,7 @@ export default function(state, emit) {
 
     if (Math.random() > 0.95) {
       // let w = window.open("http://131.220.172.253:8081", `target`,
-      let w = window.open("http://192.168.4.149", `target`,
+      let w = window.open("http://192.168.4.149/axis-cgi/mjpg/video.cgi?resolution=640x480", `target`,
       `left=${ state.windowPosition[0] },top=${ state.windowPosition[1] },width=760,height=720`);
       setTimeout(() => {
         w?.close();
