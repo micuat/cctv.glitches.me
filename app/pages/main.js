@@ -14,7 +14,7 @@ export default function(state, emit) {
   `;
 
   function open(ev) {
-    window.open("/#camera", `target-${ state.windowCount }`, "left=100,top=100,width=840,height=720");
+    window.open("/#camera", `target-${ state.windowCount }`, "left=100,top=100,width=760,height=720");
     state.windowCount++;
   }
 }

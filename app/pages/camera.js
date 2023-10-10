@@ -148,7 +148,8 @@ table.selectList select.medium{ width:150px;}
 table.selectList select.large{ width:250px;}
 
 video {
-  height: 560px;
+  width: 640px;
+  // height: 560px;
 }
 `;
 
@@ -689,6 +690,8 @@ export default function(state, emit) {
       "2023-09-26-bonn-001.mp4",
       "2023-09-26-bonn-002.mp4",
       "2023-09-26-bonn-003.mp4",
+      "daniel-1.mp4",
+      "daniel-2.mp4",
     ];
 
     if (Math.random() > 0.95) {
@@ -715,12 +718,16 @@ export default function(state, emit) {
     function lerp(a, b, p) {
       return a * (1 - p) + b * p;
     }
-    for (let i = 1; i <= 10; i++) {
-      let x = lerp(origin[0], target[0], i / 10);
-      let y = lerp(origin[1], target[1], i / 10);
+    const N = 10;
+    for (let i = 1; i <= N; i++) {
+      let x = lerp(origin[0], target[0], i / N);
+      let y = lerp(origin[1], target[1], i / N);
       setTimeout(() => {
         window.moveTo(x, y);
-      }, 100 * i);
+        if (i == N) {
+          window.focus();
+        }
+      }, 1000 * i / N);
     }
 
     state.windowPosition = target;
