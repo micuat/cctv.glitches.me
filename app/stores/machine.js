@@ -11,7 +11,11 @@ export default (state, emitter) => {
     state.playback[i] = {
       id: i,
       i,
-      url: state.videos[i],
+      url: "videos-converted/" + state.videos[i],
+    }
+    console.log(state.params.video)
+    if (!!state.params.video) {
+      state.playback[i].url = state.params.video;
     }
   }
 

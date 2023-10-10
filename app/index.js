@@ -24,6 +24,7 @@ import cameraView from "./pages/camera.js";
 
 app.route("/", mainView);
 app.route("/camera", cameraView);
+app.route("/camera/:video", cameraView);
 
 // start app
 app.mount("#choomount");

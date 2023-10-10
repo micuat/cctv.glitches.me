@@ -581,7 +581,7 @@ export default function(state, emit) {
                                           ${ state.playback.map(e => html`
                                           <div class="video-container">
                                             <video id="video-${e.id}" autoplay onended=${ended.bind(e)} muted playsinline>
-                                              <source src="/videos-converted/${e.url}" type="video/mp4" />
+                                              <source src="/${e.url}" type="video/mp4" />
                                             </video>
                                           </div>
                                         `) }
@@ -739,7 +739,17 @@ export default function(state, emit) {
     else if (Math.random() > 0.95) {
       this.id = Math.floor(Math.random() * v.length);
       this.url = v[this.id];
-      ev.target.src = this.url;
+      if (Math.random() > 0.5) {
+        ev.target.src = this.url;
+      }
+      else {
+        let w = window.open(`/#camera/${ this.url }`, `target`,
+        `left=0,top=0,width=${ window.screen.width },height=${ window.screen.height }`);
+        setTimeout(() => {
+          w?.close();
+          ended.bind(ev)(ev);
+        }, 10 * 1000)
+      }
     }
     else {
       ev.target.src = "/videos-converted/" + this.url;
