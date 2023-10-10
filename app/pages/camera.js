@@ -686,6 +686,35 @@ export default function(state, emit) {
 </div>
   `;
   function ended(ev) {
+    if (!state.throbber) {
+      ev.target.src = "/throbber.mp4";
+      state.throbber = true;
+
+      let origin = state.windowPosition;
+      let target = [
+        Math.random() * (window.screen.width - window.outerWidth),
+        Math.random() * (window.screen.height - window.outerHeight)
+      ]
+      function lerp(a, b, p) {
+        return a * (1 - p) + b * p;
+      }
+      const N = 10;
+      for (let i = 1; i <= N; i++) {
+        let x = lerp(origin[0], target[0], i / N);
+        let y = lerp(origin[1], target[1], i / N);
+        setTimeout(() => {
+          window.moveTo(x, y);
+          if (i == N) {
+            window.focus();
+          }
+        }, 1320 * i / N);
+      }
+  
+      state.windowPosition = target;
+      return;
+    }
+
+    state.throbber = false;
     const v = [
       "2023-09-26-bonn-001.mp4",
       "2023-09-26-bonn-002.mp4",
@@ -695,6 +724,18 @@ export default function(state, emit) {
     ];
 
     if (Math.random() > 0.95) {
+      let w = window.open("http://131.220.172.253:8081", `target`, "left=100,top=100,width=760,height=720");
+      setTimeout(() => {
+        w?.close();
+        ended.bind(ev)(ev);
+      }, 10 * 1000)
+
+      // const frame = html`
+      // <iframe src="http://131.220.172.253:8081" width="760" height="720"
+      // style="position:absolute;top:0;left:0;width:100%;height100vh;z-index:100" />`
+      // document.body.appendChild(frame)
+    }
+    else if (Math.random() > 0.95) {
       this.id = Math.floor(Math.random() * v.length);
       this.url = v[this.id];
       ev.target.src = this.url;
@@ -709,28 +750,6 @@ export default function(state, emit) {
 
     this.id = Math.floor(Math.random() * state.videos.length);
     this.url = state.videos[this.id];
-
-    let origin = state.windowPosition;
-    let target = [
-      Math.random() * (window.screen.width - window.outerWidth),
-      Math.random() * (window.screen.height - window.outerHeight)
-    ]
-    function lerp(a, b, p) {
-      return a * (1 - p) + b * p;
-    }
-    const N = 10;
-    for (let i = 1; i <= N; i++) {
-      let x = lerp(origin[0], target[0], i / N);
-      let y = lerp(origin[1], target[1], i / N);
-      setTimeout(() => {
-        window.moveTo(x, y);
-        if (i == N) {
-          window.focus();
-        }
-      }, 1000 * i / N);
-    }
-
-    state.windowPosition = target;
   }
   function dialogBgClick(e) {
     if (e.target.id == "dialogback") {
