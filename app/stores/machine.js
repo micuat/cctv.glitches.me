@@ -1,6 +1,3 @@
-import raw from "choo/html/raw";
-import html from "choo/html";
-
 import text from "/list?raw";
 
 export default (state, emitter) => {
@@ -13,7 +10,6 @@ export default (state, emitter) => {
       i,
       url: "videos-converted/" + state.videos[i],
     }
-    console.log(state.params.video)
     if (!!state.params.video) {
       state.playback[i].url = state.params.video;
     }
