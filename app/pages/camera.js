@@ -600,6 +600,7 @@ export default function(state, emit) {
       ev.target.onerror = (e) => {
         console.log("lol", e);
         ended.bind(e)(ev);
+        reload();
       }
     }
 
