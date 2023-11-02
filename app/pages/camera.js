@@ -600,8 +600,9 @@ export default function(state, emit) {
       ev.target.onerror = (e) => {
         console.log("lol", e);
         ended.bind(e)(ev);
-        reload();
+        location.reload();
       }
+      state.url = this.url;
     }
 
     this.id = Math.floor(Math.random() * state.videos.length);
